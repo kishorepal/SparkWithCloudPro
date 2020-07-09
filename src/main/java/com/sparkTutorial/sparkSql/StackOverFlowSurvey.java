@@ -16,7 +16,8 @@ public class StackOverFlowSurvey {
 
     public static void main(String[] args) throws Exception {
 
-        String inputFile = "gs://kishore-spark-test/in/2016-stack-overflow-survey-responses.csv";
+        String inputFile = "gs://{gcp_bucket_name}/in/2016-stack-overflow-survey-responses.csv";
+        String outputFile = "gs://{gcp_bucket_name}/out/2016-stack-overflow-survey-responses.csv";
 
         Logger.getLogger("org").setLevel(Level.ERROR);
         SparkSession session = SparkSession.builder().appName("StackOverFlowSurvey").getOrCreate();
