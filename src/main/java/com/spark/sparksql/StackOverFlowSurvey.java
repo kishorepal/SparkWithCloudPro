@@ -1,4 +1,4 @@
-package com.sparkTutorial.sparkSql;
+package com.spark.sparksql;
 
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
